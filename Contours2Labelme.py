@@ -92,14 +92,6 @@ def main(search_path, save_path='./ContoursRes/'):
             "imageWidth": w
         }
 
-        labelme_polygon = {
-            "label": "",
-            "points": [],
-            "group_id": None,
-            "shape_type": "polygon",
-            "flags": {}
-        }
-
         #FindColorList(img)
 
         peak_hull = createHullPoint(img, findcolor=[0, 0, 255])
